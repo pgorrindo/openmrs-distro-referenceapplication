@@ -9,12 +9,12 @@ ARG APP_SHELL_VERSION=5.7.2
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY spa-assemble-config.json .
-COPY spa-build-config.json .
+COPY spa-assemble-config_sdh.json .
+COPY spa-build-config_sdh.json .
 
 ARG CACHE_BUST
-RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-5.7.2} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
-RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-5.7.2} build --build-config spa-build-config.json --target ./spa
+RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-5.7.2} assemble --manifest --mode config --config spa-assemble-config_sdh.json --target ./spa
+RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-5.7.2} build --build-config spa-build-config_sdh.json --target ./spa
 RUN if [ ! -f ./spa/index.html ]; then echo 'Build failed. Please check the logs above for details. This may have happened because of an update to a library that OpenMRS depends on.'; exit 1; fi
 
 #--------------------------------------------
@@ -36,6 +36,6 @@ RUN chmod +x /usr/local/bin/startup.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY --from=dev /app/spa /usr/share/nginx/html
-COPY config-core_demo.json /usr/share/nginx/html
+COPY config-core_sdh.json /usr/share/nginx/html
 
 CMD ["/usr/local/bin/startup.sh"]
