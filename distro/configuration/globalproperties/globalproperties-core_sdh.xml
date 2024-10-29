@@ -39,6 +39,6 @@
 
     <globalProperty>
         <property>attachments.allowedFileExtensions</property>
-        <value>jpeg,jpg,png</value>
+        <value>jpeg,jpg,png,pdf</value>
     </globalProperty>
 </config>
