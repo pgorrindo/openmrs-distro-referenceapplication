@@ -8,7 +8,7 @@ services:
       - frontend
       - backend
     ports:
-      - ${PORTS}
+      - "80:80"
 
   frontend:
     image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
@@ -62,5 +62,5 @@ services:
       - db-data:/var/lib/mysql
 
 volumes:
-  openmrs-data: ~
-  db-data: ~
+  openmrs-data-${ENVT}: ~
+  db-data-${ENVT}: ~
