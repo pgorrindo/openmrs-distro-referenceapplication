@@ -35,7 +35,7 @@
   },
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#ffffff",
-    "Brand color #2": "#000000",
-    "Brand color #3": "#dddddd"
+    "Brand color #2": "#ffffff",
+    "Brand color #3": "#ffffff"
   }
 }
