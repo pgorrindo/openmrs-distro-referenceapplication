@@ -37,5 +37,15 @@
     "Brand color #1": "#FFD53E",
     "Brand color #2": "#FFF75E",
     "Brand color #3": "#FDB833"
+  },
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-test.png"
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "https://salcedodoctorshospital.org/assets/sdh-logo.png"
+    }
   }
 }
