@@ -1,6 +1,6 @@
 # SDH-specific implementation
 
-name: sdh_openmrs_${ENVT}
+name: sdh-openmrs-app-${ENVT}
 
 services:
   gateway:
@@ -65,6 +65,6 @@ services:
 
 volumes:
   openmrs-data:
-    name: sdh_openmrs-data-${ENVT}
+    name: sdh-openmrs-app-data-${ENVT}
   db-data:
-    name: sdh_db-data-${ENVT}
+    name: sdh-openmrs-db-data-${ENVT}
