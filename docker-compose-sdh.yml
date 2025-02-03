@@ -1,5 +1,7 @@
 # SDH-specific implementation
 
+name: sdh_openmrs_${ENVT}
+
 services:
   gateway:
     image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
