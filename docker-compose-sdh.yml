@@ -1,4 +1,4 @@
-version: "3.7"
+# SDH-specific implementation
 
 services:
   gateway:
@@ -62,5 +62,7 @@ services:
       - db-data:/var/lib/mysql
 
 volumes:
-  openmrs-data: ~
-  db-data: ~
+  openmrs-data:
+    name: sdh_openmrs-data-${ENVT}
+  db-data:
+    name: sdh_db-data-${ENVT}
