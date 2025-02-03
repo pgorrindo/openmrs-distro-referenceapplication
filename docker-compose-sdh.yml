@@ -23,6 +23,8 @@ services:
       timeout: 5s
     depends_on:
       - backend
+    ports:
+      - ${PORTS}
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
