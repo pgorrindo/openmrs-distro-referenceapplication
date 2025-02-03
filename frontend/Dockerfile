@@ -6,7 +6,7 @@ FROM --platform=$BUILDPLATFORM node:18-alpine as dev
 
 ARG APP_SHELL_VERSION=6.0.2
 
-# ARG CONFIG_JSON_FILE
+ARG CONFIG_JSON_FILE
 
 RUN mkdir -p /app
 WORKDIR /app
@@ -39,6 +39,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY --from=dev /app/spa /usr/share/nginx/html
 # COPY config-core_demo.json /usr/share/nginx/html
-# COPY $CONFIG_JSON_FILE /usr/share/nginx/html
+COPY $CONFIG_JSON_FILE /usr/share/nginx/html
 
 CMD ["/usr/local/bin/startup.sh"]
