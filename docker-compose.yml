@@ -62,5 +62,5 @@ services:
       - db-data-${ENVT}:/var/lib/mysql
 
 volumes:
-  openmrs-data: ~
-  db-data: ~
+  openmrs-data-${ENVT}: ~
+  db-data-${ENVT}: ~
