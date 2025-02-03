@@ -1,3 +1,5 @@
+# SDH-specific implementation
+
 services:
   gateway:
     image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
