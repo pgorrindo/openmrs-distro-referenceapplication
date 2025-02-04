@@ -45,7 +45,8 @@
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "https://salcedodoctorshospital.org/assets/sdh-logo.png"
+      // "src": "https://salcedodoctorshospital.org/assets/sdh-logo.png"
+      "name": "SDH-Dev"
     }
   }
 }
