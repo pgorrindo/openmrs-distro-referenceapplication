@@ -9,7 +9,7 @@ dc978fe8-b574-4e11-be54-626ae2d28ed8,Application: Enters ADT Events,Enters ADT e
 eba658df-fa88-4dab-b000-57e1e5cb2e43,Application: Enters Vitals,Enters vitals,Privilege Level: High,,
 fb393086-d6ec-4bcb-a300-5815a554c4ae,Application: Has Super User Privileges,Extends the underlying System Developer API role,System Developer; Privilege Level: High,,
 2d09a0e2-240a-4dd7-9c3e-9e2cd2cb2d1f,Application: Records Allergies,Records and edits allergies,Privilege Level: High,,
-58f60da3-03bd-4b57-bb3c-429b50f6939b,Application: Registers Patients,Registers patients,Privilege Level: High,,
+58f60da3-03bd-4b57-bb3c-429b50f6939b,Application: Registers Patients_DEMO,Registers patients,Privilege Level: High,,
 564b560e-3fe8-4829-8be4-68ddb40cf106,Application: Uses Patient Summary,Uses patient summary,Privilege Level: High,,
 93a9c2f8-9296-488f-9451-43667e1c4d7f,Application: Writes Clinical Notes,Writes clinical notes,Privilege Level: High,,
 4ef1f0f9-fee6-414b-910d-28e17df345c2,Organizational: Doctor,Doctor,Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
