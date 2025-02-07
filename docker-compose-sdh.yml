@@ -10,7 +10,7 @@ services:
       - frontend
       - backend
     ports:
-      - ${PORTS}
+      - "${ENVT_PORT}:80"
 
   frontend:
     image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
@@ -21,7 +21,7 @@ services:
       SPA_CONFIG_URLS: /openmrs/spa/config-core-sdh-${ENVT}.json
       SPA_DEFAULT_LOCALE:
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/"]
+      test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/"]
       timeout: 5s
     depends_on:
       - backend
@@ -40,7 +40,7 @@ services:
       OMRS_CONFIG_CONNECTION_USERNAME: ${OPENMRS_DB_USER:-openmrs}
       OMRS_CONFIG_CONNECTION_PASSWORD: ${OPENMRS_DB_PASSWORD:-openmrs}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
+      test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/openmrs"]
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
