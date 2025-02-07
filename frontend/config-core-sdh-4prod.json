@@ -36,7 +36,10 @@
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#E91E63",
     "Brand color #2": "#F06292",
-    "Brand color #3": "#C2185B"
+    "Brand color #3": "#C2185B",
+    "implementationName": "SDH",
+    "preferredCalendar": {
+      "en": "gregory"
   },
   "@openmrs/esm-login-app": {
     "logo": {
