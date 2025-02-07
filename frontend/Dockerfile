@@ -4,7 +4,7 @@
 #--------------------------------------------
 FROM --platform=$BUILDPLATFORM node:18-alpine as dev
 
-ARG APP_SHELL_VERSION=next
+ARG APP_SHELL_VERSION=latest
 
 RUN mkdir -p /app
 WORKDIR /app
