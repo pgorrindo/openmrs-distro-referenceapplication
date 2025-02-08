@@ -51,5 +51,26 @@
     "logo": {
       "name": "SDH-Dev"
     }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": [
+        "add-patient-to-patient-list-button",
+        "print-identifier-sticker-button",
+        "edit-patient-details-button",
+        "start-visit-button",
+        "stop-visit-button",
+        "mark-alive-button",
+        "cancel-visit-button"
+      ]
+    }
+  },
+  "@openmrs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact",
+      "relationships",
+      "Deceased"
+    ]
   }
 }
