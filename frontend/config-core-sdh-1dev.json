@@ -54,15 +54,9 @@
   },
   "@openmrs/esm-patient-banner-app": {
     "extensionSlots": {
-      "patient-actions-slot": [
-        "add-patient-to-patient-list-button",
-        "print-identifier-sticker-button",
-        "edit-patient-details-button",
-        "start-visit-button",
-        "stop-visit-button",
-        "mark-alive-button",
-        "cancel-visit-button"
-      ]
+      "patient-actions-slot": {
+        "remove": ["mark-patient-deceased-button"]
+      }
     }
   },
   "@openmrs/esm-patient-registration-app": {
