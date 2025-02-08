@@ -66,11 +66,6 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
-    "sections": [
-      "demographics",
-      "contact",
-      "relationships",
-      "Deceased"
-    ]
+    "sections": ["demographics", "contact", "relationships", "death"]
   }
 }
