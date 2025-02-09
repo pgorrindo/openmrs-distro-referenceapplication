@@ -39,5 +39,10 @@
             <property>attachments.allowedFileExtensions</property>
             <value>jpeg,jpg,png,pdf</value>
         </globalProperty>
+
+        <globalProperty>
+            <property>attachments.allowWebcam</property>
+            <value>true</value>
+        </globalProperty>
     </globalProperties>
 </config>
