@@ -1,6 +1,18 @@
 {
   "@openmrs/esm-patient-chart-app": {
-    "showUpcomingAppointments": true
+    "showUpcomingAppointments": true,
+    "extensionSlots": {
+      "action-menu-patient-chart-items-slot": {
+        "remove": [
+          "patient-lists-action-menu"
+        ],
+        "order": [
+          "clinical-form-action-menu",
+          "visit-note-nav-action",
+          "order-basket-action-menu"
+        ]
+      }
+    }
   },
   "@openmrs/esm-service-queues-app": {
     "priorityConfigs": [
