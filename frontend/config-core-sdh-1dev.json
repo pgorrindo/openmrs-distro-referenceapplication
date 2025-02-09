@@ -8,8 +8,7 @@
         ],
         "order": [
           "clinical-form-action-menu",
-          "visit-note-nav-action",
-          "order-basket-action-menu"
+          "visit-note-nav-action"
         ]
       }
     }
