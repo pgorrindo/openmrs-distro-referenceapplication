@@ -10,6 +10,21 @@
           "clinical-form-action-menu",
           "visit-note-nav-action"
         ]
+      },
+      "patient-chart-dashboard-slot": {
+        "order": [
+          "charts-summary-dashboard", 
+          "encounters-summary-dashboard",
+          "conditions-summary-dashboard",
+          "results-summary-dashboard",
+          "patient-orders-summary-dashboard",
+          "test-results-summary-dashboard",
+          "medications-summary-dashboard",
+          "allergies-summary-dashboard",
+          "immunization-summary-dashboard",
+          "attachments-results-summary-dashboard",
+          "programs-summary-dashboard"
+        ]
       }
     }
   },
