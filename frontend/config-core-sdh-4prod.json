@@ -1,6 +1,27 @@
 {
   "@openmrs/esm-patient-chart-app": {
-    "showUpcomingAppointments": true
+    "showUpcomingAppointments": true,
+    "extensionSlots": {
+      "action-menu-patient-chart-items-slot": {
+        "remove": ["patient-lists-action-menu"],
+        "order": ["clinical-form-action-menu", "visit-note-nav-action"]
+      },
+      "patient-chart-dashboard-slot": {
+        "order": [
+          "charts-summary-dashboard",
+          "encounters-summary-dashboard",
+          "conditions-summary-dashboard",
+          "results-summary-dashboard",
+          "patient-orders-summary-dashboard",
+          "test-results-summary-dashboard",
+          "medications-summary-dashboard",
+          "allergies-summary-dashboard",
+          "immunization-summary-dashboard",
+          "attachments-results-summary-dashboard",
+          "programs-summary-dashboard"
+        ]
+      }
+    }
   },
   "@openmrs/esm-service-queues-app": {
     "priorityConfigs": [
