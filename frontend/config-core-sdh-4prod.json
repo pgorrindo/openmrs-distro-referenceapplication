@@ -36,7 +36,11 @@
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#E91E63",
     "Brand color #2": "#F06292",
-    "Brand color #3": "#C2185B"
+    "Brand color #3": "#C2185B",
+    "implementationName": "SDH",
+    "preferredCalendar": {
+      "en": "gregory"
+    }
   },
   "@openmrs/esm-login-app": {
     "logo": {
@@ -47,5 +51,15 @@
     "logo": {
       "src": "https://salcedodoctorshospital.org/assets/sdh-logo.png"
     }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": {
+        "remove": ["mark-patient-deceased-button"]
+      }
+    }
+  },
+  "@openmrs/esm-patient-registration-app": {
+    "sections": ["demographics", "contact", "relationships", "death"]
   }
 }
