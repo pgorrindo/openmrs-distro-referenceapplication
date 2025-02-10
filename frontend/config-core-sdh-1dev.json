@@ -1,4 +1,16 @@
 {
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-dev.png"
+    }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": {
+        "remove": ["mark-patient-deceased-button"]
+      }
+    }
+  },
   "@openmrs/esm-patient-chart-app": {
     "showUpcomingAppointments": true,
     "extensionSlots": {
@@ -21,6 +33,63 @@
           "programs-summary-dashboard"
         ]
       }
+    }
+  },
+  "@openmrs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact",
+      "moreInfo",
+      "relationships",
+      "death"
+    ],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "useQuickSearch": false
+        }
+      }
+    },
+    "fieldDefinitions": [
+      {
+        "id": "philhealth_id",
+        "name": "PhilHealth ID",
+        "type": "person attribute",
+        "uuid": "d58ef8b8-e7a2-11ef-9a05-b2f86dcd4df4",
+        "validation": {
+          "matches": ""
+        }
+      },
+      {
+        "id": "facebook_id",
+        "name": "Facebook ID",
+        "type": "person attribute",
+        "uuid": "6857d515-d187-482a-bfc7-bc1ae8fdca23",
+        "validation": {
+          "matches": ""
+        }
+      },
+      {
+        "id": "email_address",
+        "name": "Email Address",
+        "type": "person attribute",
+        "uuid": "fb270dc2-e7a2-11ef-9a05-b2f86dcd4df4",
+        "validation": {
+          "matches": ""
+        }
+      }
+    ],
+    "sectionDefinitions": [
+      {
+        "id": "moreInfo",
+        "name": "More Info",
+        "fields": ["philhealth_id", "facebook_id", "email_address"]
+      }
+    ]
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "name": "SDH-Dev"
     }
   },
   "@openmrs/esm-service-queues-app": {
@@ -62,25 +131,5 @@
     "preferredCalendar": {
       "en": "gregory"
     }
-  },
-  "@openmrs/esm-login-app": {
-    "logo": {
-      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-dev.png"
-    }
-  },
-  "@openmrs/esm-primary-navigation-app": {
-    "logo": {
-      "name": "SDH-Dev"
-    }
-  },
-  "@openmrs/esm-patient-banner-app": {
-    "extensionSlots": {
-      "patient-actions-slot": {
-        "remove": ["mark-patient-deceased-button"]
-      }
-    }
-  },
-  "@openmrs/esm-patient-registration-app": {
-    "sections": ["demographics", "contact", "relationships", "death"]
   }
 }
