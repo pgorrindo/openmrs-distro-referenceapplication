@@ -1,4 +1,16 @@
 {
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-dev.png"
+    }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": {
+        "remove": ["mark-patient-deceased-button"]
+      }
+    }
+  },
   "@openmrs/esm-patient-chart-app": {
     "showUpcomingAppointments": true,
     "extensionSlots": {
@@ -21,6 +33,21 @@
           "programs-summary-dashboard"
         ]
       }
+    }
+  },
+  "@openmrs/esm-patient-registration-app": {
+    "sections": ["demographics", "contact", "relationships", "death"],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "useQuickSearch": false
+        }
+      }
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "name": "SDH-Dev"
     }
   },
   "@openmrs/esm-service-queues-app": {
@@ -61,33 +88,6 @@
     "implementationName": "SDH-dev",
     "preferredCalendar": {
       "en": "gregory"
-    }
-  },
-  "@openmrs/esm-login-app": {
-    "logo": {
-      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-dev.png"
-    }
-  },
-  "@openmrs/esm-primary-navigation-app": {
-    "logo": {
-      "name": "SDH-Dev"
-    }
-  },
-  "@openmrs/esm-patient-banner-app": {
-    "extensionSlots": {
-      "patient-actions-slot": {
-        "remove": ["mark-patient-deceased-button"]
-      }
-    }
-  },
-  "@openmrs/esm-patient-registration-app": {
-    "sections": ["demographics", "contact", "relationships", "death"],
-    "fieldConfigurations": {
-      "address": {
-        "useAddressHierarchy": {
-          "useQuickSearch": false
-        }
-      }
     }
   }
 }
