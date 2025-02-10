@@ -81,6 +81,13 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
-    "sections": ["demographics", "contact", "relationships", "death"]
+    "sections": ["demographics", "contact", "relationships", "death"],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "useQuickSearch": false
+        }
+      }
+    }
   }
 }
