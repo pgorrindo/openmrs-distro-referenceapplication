@@ -49,5 +49,13 @@
             <property>attachments.maxStorageFileSize</property>
             <value>5.0</value>
         </globalProperty>
+        <globalProperty>
+            <property>patientIdentifierSearch.matchMode</property>
+            <value>ANYWHERE</value>
+        </globalProperty>
+        <globalProperty>
+            <property>patientSearch.matchMode</property>
+            <value>ANYWHERE</value>
+        </globalProperty>
     </globalProperties>
 </config>
