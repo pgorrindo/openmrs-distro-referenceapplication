@@ -1,0 +1,135 @@
+{
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "https://salcedodoctorshospital.org/assets/sdh-openmrs-logo-dev.png"
+    }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": {
+        "remove": ["mark-patient-deceased-button"]
+      }
+    }
+  },
+  "@openmrs/esm-patient-chart-app": {
+    "showUpcomingAppointments": true,
+    "extensionSlots": {
+      "action-menu-patient-chart-items-slot": {
+        "remove": ["patient-lists-action-menu"],
+        "order": ["clinical-form-action-menu", "visit-note-nav-action"]
+      },
+      "patient-chart-dashboard-slot": {
+        "order": [
+          "charts-summary-dashboard",
+          "encounters-summary-dashboard",
+          "conditions-summary-dashboard",
+          "results-summary-dashboard",
+          "patient-orders-summary-dashboard",
+          "test-results-summary-dashboard",
+          "medications-summary-dashboard",
+          "allergies-summary-dashboard",
+          "immunization-summary-dashboard",
+          "attachments-results-summary-dashboard",
+          "programs-summary-dashboard"
+        ]
+      }
+    }
+  },
+  "@openmrs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact",
+      "moreInfo",
+      "relationships",
+      "death"
+    ],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "useQuickSearch": false
+        }
+      }
+    },
+    "fieldDefinitions": [
+      {
+        "id": "philhealth_id",
+        "name": "PhilHealth ID",
+        "type": "person attribute",
+        "uuid": "d58ef8b8-e7a2-11ef-9a05-b2f86dcd4df4",
+        "validation": {
+          "matches": ""
+        }
+      },
+      {
+        "id": "facebook_id",
+        "name": "Facebook ID",
+        "type": "person attribute",
+        "uuid": "6857d515-d187-482a-bfc7-bc1ae8fdca23",
+        "validation": {
+          "matches": ""
+        }
+      },
+      {
+        "id": "email_address",
+        "name": "Email Address",
+        "type": "person attribute",
+        "uuid": "fb270dc2-e7a2-11ef-9a05-b2f86dcd4df4",
+        "validation": {
+          "matches": ""
+        }
+      }
+    ],
+    "sectionDefinitions": [
+      {
+        "id": "moreInfo",
+        "name": "More Info",
+        "fields": ["philhealth_id", "facebook_id", "email_address"]
+      }
+    ]
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "name": "SDH-Dev"
+    }
+  },
+  "@openmrs/esm-service-queues-app": {
+    "priorityConfigs": [
+      {
+        "conceptUuid": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
+        "tagClassName": "tag",
+        "tagType": "red"
+      }
+    ],
+    "statusConfigs": [
+      {
+        "conceptUuid": "51ae5e4d-b72b-4912-bf31-a17efb690aeb",
+        "iconComponent": "InProgress"
+      },
+      {
+        "conceptUuid": "ca7494ae-437f-4fd0-8aae-b88b9a2ba47d",
+        "iconComponent": "Group"
+      },
+      {
+        "conceptUuid": "b559fb77-4e1e-4285-b9b7-1d03e0ba983f",
+        "iconComponent": "Group"
+      }
+    ],
+    "concepts": {
+      "defaultPriorityConceptUuid": "f4620bfa-3625-4883-bd3f-84c2cce14470",
+      "emergencyPriorityConceptUuid": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
+      "defaultStatusConceptUuid": "51ae5e4d-b72b-4912-bf31-a17efb690aeb",
+      "defaultTransitionStatus": "ca7494ae-437f-4fd0-8aae-b88b9a2ba47d"
+    },
+    "visitQueueNumberAttributeUuid": "",
+    "defaultFacilityUrl": ""
+  },
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#2196F3",
+    "Brand color #2": "#64B5F6",
+    "Brand color #3": "#1976D2",
+    "implementationName": "SDH-dev",
+    "preferredCalendar": {
+      "en": "gregory"
+    }
+  }
+}

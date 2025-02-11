@@ -4,16 +4,18 @@ name: sdh-openmrs-app-${ENVT}
 
 services:
   gateway:
-    image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
+    image: openmrs/openmrs-reference-application-3-gateway:${GATEWAY_TAG:-qa}
     restart: "unless-stopped"
     depends_on:
       - frontend
       - backend
     ports:
-      - ${PORTS}
+      - "${ENVT_PORT}:80"
+    build:
+      context: ./gateway
 
   frontend:
-    image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
+    image: openmrs/openmrs-reference-application-3-frontend:${FRONTEND_TAG:-qa}
     restart: "unless-stopped"
     environment:
       SPA_PATH: /openmrs/spa
@@ -21,13 +23,15 @@ services:
       SPA_CONFIG_URLS: /openmrs/spa/config-core-sdh-${ENVT}.json
       SPA_DEFAULT_LOCALE:
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/"]
+      test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/"]
       timeout: 5s
     depends_on:
       - backend
+    build:
+      context: ./frontend
 
   backend:
-    image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    image: openmrs/openmrs-reference-application-3-backend:${BACKEND_TAG:-qa}
     restart: "unless-stopped"
     depends_on:
       - db
@@ -40,10 +44,12 @@ services:
       OMRS_CONFIG_CONNECTION_USERNAME: ${OPENMRS_DB_USER:-openmrs}
       OMRS_CONFIG_CONNECTION_PASSWORD: ${OPENMRS_DB_PASSWORD:-openmrs}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
+      test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/openmrs"]
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
+    build:
+      context: .
 
   # MariaDB
   db:
