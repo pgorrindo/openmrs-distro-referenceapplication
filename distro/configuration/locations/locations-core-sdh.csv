@@ -1,0 +1,12 @@
+Uuid,Void/Retire,Name,Description,Parent,Tag|Login Location,Tag|Visit Location,Tag|Facility Location,Tag|Queue Location,Tag|Admission Location,Tag|Transfer Location,Attribute|9eca4f4e-707f-4bb8-8289-2f9b6e93803c,Attribute|Last Audit Date,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
+2f4a7536-e81f-11ef-95d0-b2f86dcd4df4,,SDH,Salcedo Doctors Hospital,,,TRUE,,,,,,,,,,,,,,,,,,
+2f4a759a-e81f-11ef-95d0-b2f86dcd4df4,,SDH ER,Emergency Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75ae-e81f-11ef-95d0-b2f86dcd4df4,,SDH OPD,Outpatient Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75c2-e81f-11ef-95d0-b2f86dcd4df4,,SDH Ward,Inpatient Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75cc-e81f-11ef-95d0-b2f86dcd4df4,,SDH Registration,Registration Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75cd-e81f-11ef-95d0-b2f86dcd4df4,,SDH Laboratory,Laboratory Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75ea-e81f-11ef-95d0-b2f86dcd4df4,,SDH Imaging,Imaging Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75f4-e81f-11ef-95d0-b2f86dcd4df4,,SDH OR,Operating Room,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75fe-e81f-11ef-95d0-b2f86dcd4df4,,SDH PACU,Post-Anesthesia Care Unit,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a75ff-e81f-11ef-95d0-b2f86dcd4df4,,SDH Pharmacy,Pharmacy Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2f4a7608-e81f-11ef-95d0-b2f86dcd4df4,,SDH Business Office,Business Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
