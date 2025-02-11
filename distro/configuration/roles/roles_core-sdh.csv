@@ -13,7 +13,7 @@ fb393086-d6ec-4bcb-a300-5815a554c4ae,Application: Has Super User Privileges,Exte
 564b560e-3fe8-4829-8be4-68ddb40cf106,Application: Uses Patient Summary,Uses patient summary,Privilege Level: High,,
 93a9c2f8-9296-488f-9451-43667e1c4d7f,Application: Writes Clinical Notes,Writes clinical notes,Privilege Level: High,,
 4ef1f0f9-fee6-414b-910d-28e17df345c2,SDH: Doctor,Doctor,Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
-4ef1f0f9-fee6-414b-910d-28e17df345c2,SDH: Midwife,Midwife,Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
+c9b17aeb-de34-4cad-a484-118652f6ea39,SDH: Midwife,Midwife,Application: Records Allergies; Application: Writes Clinical Notes; Application: Enters ADT Events; Application: Uses Patient Summary,,
 2749cd1b-251a-4d8b-bc35-0165f2b1af3e,SDH: Nurse,Nurse,Application: Records Allergies; Application: Enters ADT Events; Application: Uses Patient Summary; Application: Enters Vitals,,
 fab43ac4-79bc-4f3d-805b-bd3a82ce41e9,SDH: Clerk,Registration Clerk,Application: Registers Patients; Application: Uses Patient Summary,,
 2f087f90-9c47-4262-bfce-23c7862e727e,SDH: System Administrator,System Administrator,Application: Configures Forms; Application: Configures Metadata; Application: Administers System,,
