@@ -1,7 +1,7 @@
 Uuid,Void/Retire,Name,Description,Parent,Tag|Login Location,Tag|Visit Location,Tag|Facility Location,Tag|Queue Location,Tag|Admission Location,Tag|Transfer Location,Attribute|9eca4f4e-707f-4bb8-8289-2f9b6e93803c,Attribute|Last Audit Date,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
 2f4a7536-e81f-11ef-95d0-b2f86dcd4df4,,SDH,Salcedo Doctors Hospital,,,TRUE,,,,,,,,,,,,,,,,,,
 2f4a75cc-e81f-11ef-95d0-b2f86dcd4df4,,SDH Registration,Registration Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
-ea0c7da9-e845-11ef-aff7-b2f86dcd4df4,,SDH Triage,Triage,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
+2aba0243-c9da-4365-8132-9c51e560a236,,SDH Triage,Triage,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
 2f4a759a-e81f-11ef-95d0-b2f86dcd4df4,,SDH ER,Emergency Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
 2f4a75ae-e81f-11ef-95d0-b2f86dcd4df4,,SDH OPD,Outpatient Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
 2f4a75c2-e81f-11ef-95d0-b2f86dcd4df4,,SDH Ward,Inpatient Dept,SDH,TRUE,,,,TRUE,TRUE,,,,,,,,,,,,,,
