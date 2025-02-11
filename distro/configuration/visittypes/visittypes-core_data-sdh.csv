@@ -1,6 +1,7 @@
 Uuid,Void/Retire,Name,Description,_version:1
 c3e8aab2-e821-11ef-95d0-b2f86dcd4df4,,Inpatient,"Patient admitted to the hospital",
-c3e8aada-e821-11ef-95d0-b2f86dcd4df4,,Outpatient,"Patient seen in clinic",
+c3e8aada-e821-11ef-95d0-b2f86dcd4df4,,Outpatient (New),"New patient seen in clinic",
+c3e8ab02-e821-11ef-95d0-b2f86dcd4df4,,Outpatient (Return),"Return patient seen in clinic",
 c3e8aae4-e821-11ef-95d0-b2f86dcd4df4,,Emergency Room,"Patient seen in ER",
 c3e8aaee-e821-11ef-95d0-b2f86dcd4df4,,Telehealth,"Patient interaction via phone/Facebook",
-c3e8aaf8-e821-11ef-95d0-b2f86dcd4df4,true,Group Session,Visit type for group sessions (used in Fast Data Entry),
+c3e8aaf8-e821-11ef-95d0-b2f86dcd4df4,,Group Session,Visit type for group sessions (used in Fast Data Entry),
