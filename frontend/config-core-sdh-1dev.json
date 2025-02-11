@@ -31,8 +31,48 @@
           "immunization-summary-dashboard",
           "attachments-results-summary-dashboard",
           "programs-summary-dashboard"
+        ],
+        "add": [
+          "nav-group#Surgery"
+        ],
+        "configure": {
+          "nav-group#Surgery": {
+            "title": "Surgery",
+            "slotName": "surgery-nav-group-slot"
+          }
+        }
+      },
+      "surgery-nav-group-slot": {
+        "add": [
+          "conditions-summary-dashboard",
+          "allergies-summary-dashboard"
+        ],
+        "order": [
+          "conditions-summary-dashboard",
+          "allergies-summary-dashboard"
         ]
-      }
+      },
+      "patient-chart-allergies-dashboard-slot": {
+        "add": [
+          "obs-by-encounter-widget#Surgery"
+        ],
+        "configure": {
+          "obs-by-encounter-widget#Surgery": {
+            "title": "Hemoglobin Result",
+            "resultName": "Surgery",
+            "data": [
+              {
+                "concept": "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "label": "hemoglobin",
+                "color": "green"
+              }
+            ],
+            "table": {
+              "pageSize": 20
+            }
+          }
+        }
+      }   
     }
   },
   "@openmrs/esm-patient-registration-app": {
