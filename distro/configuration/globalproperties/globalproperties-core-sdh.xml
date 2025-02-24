@@ -57,5 +57,9 @@
             <property>patientSearch.matchMode</property>
             <value>ANYWHERE</value>
         </globalProperty>
+        <globalProperty>
+            <property>sms.timeZone</property>
+            <value>tl</value>
+        </globalProperty>
     </globalProperties>
 </config>
