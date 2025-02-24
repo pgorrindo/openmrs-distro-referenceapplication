@@ -22,6 +22,7 @@ services:
       API_URL: /openmrs
       SPA_CONFIG_URLS: /openmrs/spa/config-core-sdh-${ENVT}.json
       SPA_DEFAULT_LOCALE:
+      TZ: Asia/Manila 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/"]
       timeout: 5s
@@ -43,6 +44,7 @@ services:
       OMRS_CONFIG_CONNECTION_DATABASE: openmrs
       OMRS_CONFIG_CONNECTION_USERNAME: ${OPENMRS_DB_USER:-openmrs}
       OMRS_CONFIG_CONNECTION_PASSWORD: ${OPENMRS_DB_PASSWORD:-openmrs}
+      TZ: Asia/Manila 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:${ENVT_PORT}/openmrs"]
       timeout: 5s
@@ -66,6 +68,7 @@ services:
       MYSQL_USER: ${OMRS_DB_USER:-openmrs}
       MYSQL_PASSWORD: ${OMRS_DB_PASSWORD:-openmrs}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
+      TZ: Asia/Manila  
     volumes:
       - db-data:/var/lib/mysql
 
