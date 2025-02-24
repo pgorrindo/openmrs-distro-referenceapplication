@@ -9,7 +9,13 @@
       "patient-actions-slot": {
         "remove": ["mark-patient-deceased-button"]
       }
-    }
+    },
+    "contactAttributeTypes": [
+      "14d4f066-15f5-102d-96e4-000c29c2a5d7",
+      "6857d515-d187-482a-bfc7-bc1ae8fdca23",
+      "d58ef8b8-e7a2-11ef-9a05-b2f86dcd4df4",
+      "fb270dc2-e7a2-11ef-9a05-b2f86dcd4df4"
+    ]
   },
   "@openmrs/esm-patient-chart-app": {
     "showUpcomingAppointments": true,
